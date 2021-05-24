@@ -22,8 +22,6 @@ val=input("Enter a hashtag : ")
 for trend in trend_result[0]["trends"][:]:
     if val==(trend["name"]):
         print("Hashtag count : ",trend["tweet_volume"])
-    else:
-        print("Hashtag not found or is not trending")
         
     
 
