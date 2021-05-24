@@ -19,9 +19,14 @@ trend_result=api.trends_place(india_woeid)
 val=input("Enter a hashtag : ")
 #Sample input #Palestinewin
 
+count=0
 for trend in trend_result[0]["trends"][:]:
     if val==(trend["name"]):
         print("Hashtag count : ",trend["tweet_volume"])
+        
+if count==0:
+    print("Hashtag not found or is not trending any longer")
+
         
     
 
